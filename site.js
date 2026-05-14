@@ -1,14 +1,6 @@
 (function () {
   const navbar = document.querySelector(".navbar");
   const params = new URLSearchParams(window.location.search);
-  const main = document.querySelector("main");
-
-  if (main && params.get("sent") === "1") {
-    const status = document.createElement("div");
-    status.className = "form-status form-status-success";
-    status.textContent = "Thanks for contacting us. We will contact you as soon as possible.";
-    main.prepend(status);
-  }
 
   if (navbar) {
     const updateNavbar = () => navbar.classList.toggle("scrolled", window.scrollY > 12);
@@ -20,6 +12,20 @@
   if (!forms.length) {
     return;
   }
+
+  const showFormSuccess = (form, message) => {
+    const existing = form.querySelector(".form-status-success");
+    if (existing) {
+      existing.textContent = message;
+      return;
+    }
+
+    const status = document.createElement("div");
+    status.className = "form-status form-status-success form-status-inline";
+    status.setAttribute("role", "status");
+    status.textContent = message;
+    form.prepend(status);
+  };
 
   const showFormError = (form, message) => {
     const existing = form.querySelector(".form-status-error");
@@ -36,6 +42,10 @@
   };
 
   forms.forEach((form) => {
+    if (params.get("sent") === "1") {
+      showFormSuccess(form, "Thanks for contacting us. We will contact you as soon as possible.");
+    }
+
     if (params.get("error") === "1") {
       showFormError(form, "Sorry, your message could not be sent. Please check the form and try again, or call 604-800-3900.");
     }
@@ -66,6 +76,10 @@
       form.appendChild(redirect);
     }
   });
+
+  if (params.get("sent") === "1" || params.get("error") === "1") {
+    forms[0].scrollIntoView({ behavior: "smooth", block: "center" });
+  }
 
   const siteKey = window.RECAPTCHA_SITE_KEY || "";
   if (!siteKey) {
