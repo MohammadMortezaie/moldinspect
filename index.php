@@ -25,7 +25,7 @@ require $rootDir . '/includes/header.php';
             <p class="hero-copy mt-3">Certified mold inspection, mold testing, moisture detection, and clear reporting for Vancouver homeowners who need fast, trustworthy answers.</p>
             <a class="hero-phone my-3" href="tel:+16048003900"><i class="bi bi-telephone-fill fs-2"></i>604-800-3900</a>
             <div class="d-grid d-sm-flex gap-3">
-              <a class="btn btn-primary-custom" href="/contact/"><i class="bi bi-calendar2-check me-2"></i>Book Inspection</a>
+              <a class="btn btn-primary-custom" href="#hero-card/"><i class="bi bi-calendar2-check me-2"></i>Book Inspection</a>
               <a class="btn btn-outline-custom" href="/mold-testing-vancouver/"><i class="bi bi-droplet-half me-2"></i>Mold Testing</a>
             </div>
             <div class="row g-3 mt-4">
@@ -36,7 +36,7 @@ require $rootDir . '/includes/header.php';
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="hero-card">
+            <div id="hero-card" class="hero-card">
               <img class="service-photo" src="/asset/image/inspecting-mold.jpg" alt="Mold inspector checking a Vancouver home">
               <?php
 $formClass = 'quick-form contact-form';

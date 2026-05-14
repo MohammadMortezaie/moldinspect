@@ -13,15 +13,24 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
   color: var(--ink);
   background: var(--cream);
   line-height: 1.65;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 img { max-width: 100%; height: auto; }
+main, section, .container, .row, [class*="col-"] {
+  min-width: 0;
+}
 a { color: var(--green); text-decoration: none; }
 a:hover { color: var(--green-dark); }
 :focus-visible { outline: 3px solid rgba(31, 107, 77, .35); outline-offset: 3px; }
@@ -105,12 +114,15 @@ h1 { font-size: clamp(2.55rem, 6vw, 5.7rem); max-width: 900px; }
 .hero-phone, .big-call {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
   color: var(--green-dark);
   font-size: clamp(2rem, 6vw, 4rem);
   font-weight: 800;
   letter-spacing: -.055em;
   line-height: 1;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .hero-card, .service-card, .plain-card, .review-card, .area-card, .step-card, .contact-card {
@@ -262,7 +274,15 @@ h1 { font-size: clamp(2.55rem, 6vw, 5.7rem); max-width: 900px; }
 }
 .hp-field {
   position: absolute;
-  left: -9999px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
   opacity: 0;
   pointer-events: none;
 }
@@ -397,6 +417,11 @@ h1 { font-size: clamp(2.55rem, 6vw, 5.7rem); max-width: 900px; }
 @media (max-width: 767.98px) {
   body { padding-bottom: 76px; }
   .hero, .page-hero { padding: 102px 0 52px; }
+  h1, .section-title { overflow-wrap: anywhere; }
+  .hero-phone, .big-call {
+    font-size: clamp(1.75rem, 9vw, 2.45rem);
+    letter-spacing: -.035em;
+  }
   .btn { width: 100%; }
   .section-padding { padding: 58px 0; }
   .trust-item { padding: 12px 0; }
