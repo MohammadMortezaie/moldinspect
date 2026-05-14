@@ -14,17 +14,17 @@ $idPrefix = $uniqueId . '-';
     <h2 class="h4 mb-3"><?= e($formTitle) ?></h2>
   <?php endif; ?>
   <div class="row g-3">
-    <div class="col-md-6">
+    <div class="col-12">
       <label class="form-label" for="<?= e($idPrefix) ?>name">Full Name</label>
       <input class="form-control" id="<?= e($idPrefix) ?>name" name="name" autocomplete="name" required>
     </div>
-    <div class="col-md-6">
-      <label class="form-label" for="<?= e($idPrefix) ?>email">Email</label>
-      <input class="form-control" id="<?= e($idPrefix) ?>email" name="email" type="email" autocomplete="email" required>
-    </div>
-    <div class="col-md-6">
+    <div class="col-12">
       <label class="form-label" for="<?= e($idPrefix) ?>phone">Phone Number</label>
       <input class="form-control" id="<?= e($idPrefix) ?>phone" name="phone" type="tel" autocomplete="tel" required>
+    </div>
+    <div class="col-12">
+      <label class="form-label" for="<?= e($idPrefix) ?>email">Email</label>
+      <input class="form-control" id="<?= e($idPrefix) ?>email" name="email" type="email" autocomplete="email" required>
     </div>
     <div class="col-12">
       <label class="form-label" for="<?= e($idPrefix) ?>message">Message</label>

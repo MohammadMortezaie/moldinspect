@@ -21,13 +21,23 @@
     return;
   }
 
+  const showFormError = (form, message) => {
+    const existing = form.querySelector(".form-status-error");
+    if (existing) {
+      existing.textContent = message;
+      return;
+    }
+
+    const status = document.createElement("div");
+    status.className = "form-status form-status-error form-status-inline";
+    status.setAttribute("role", "alert");
+    status.textContent = message;
+    form.prepend(status);
+  };
+
   forms.forEach((form) => {
     if (params.get("error") === "1") {
-      const status = document.createElement("div");
-      status.className = "form-status form-status-error form-status-inline";
-      status.setAttribute("role", "alert");
-      status.textContent = "Sorry, your message could not be sent. Please check the form and try again, or call 604-800-3900.";
-      form.prepend(status);
+      showFormError(form, "Sorry, your message could not be sent. Please check the form and try again, or call 604-800-3900.");
     }
 
     if (!form.querySelector('input[name="recaptcha_token"]')) {
@@ -77,6 +87,7 @@
       event.preventDefault();
 
       if (!window.grecaptcha) {
+        showFormError(form, "Sorry, reCAPTCHA could not load. Please refresh the page or call 604-800-3900.");
         return;
       }
 
