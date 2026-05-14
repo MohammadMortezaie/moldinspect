@@ -95,13 +95,14 @@ if (!empty($_POST['website'] ?? '')) {
 $name = trim((string) ($_POST['name'] ?? ''));
 $phone = trim((string) ($_POST['phone'] ?? ''));
 $email = trim((string) ($_POST['email'] ?? ''));
-$city = trim((string) ($_POST['city'] ?? ''));
-$service = trim((string) ($_POST['service'] ?? ''));
-$urgency = trim((string) ($_POST['urgency'] ?? ''));
 $message = trim((string) ($_POST['message'] ?? ''));
 $token = trim((string) ($_POST['recaptcha_token'] ?? ''));
 
-if ($name === '' || $phone === '' || $token === '') {
+if ($name === '' || $email === '' || $phone === '' || $message === '' || $token === '') {
+    redirect_with_error($redirectBase);
+}
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     redirect_with_error($redirectBase);
 }
 
@@ -154,14 +155,11 @@ $clean = static function (string $value): string {
 };
 
 $emailBody = "New Mold Inspection Vancouver form submission:\n\n"
-    . 'Name: ' . $clean($name) . "\n"
-    . 'Phone: ' . $clean($phone) . "\n"
+    . 'Full Name: ' . $clean($name) . "\n"
     . 'Email: ' . $clean($email) . "\n"
-    . 'City: ' . $clean($city) . "\n"
-    . 'Service: ' . $clean($service) . "\n"
-    . 'Urgency: ' . $clean($urgency) . "\n"
+    . 'Phone Number: ' . $clean($phone) . "\n"
     . "Message:\n"
-    . ($message === '' ? 'No message provided.' : $message) . "\n";
+    . $message . "\n";
 
 $headers = [
     'From: ' . $fromEmail,

@@ -1,63 +1,21 @@
-<!doctype html>
-<html lang="en-CA">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mold Inspection Vancouver | (604) 800-3900</title>
-  <meta name="description" content="Certified mold inspection in Vancouver. Same-day mold testing, moisture detection, air quality testing, thermal imaging, and clear reports. Call 604-800-3900.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://moldinspectionvancouver.ca/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://moldinspectionvancouver.ca/">
-  <meta property="og:title" content="Mold Inspection Vancouver | Certified Mold Testing">
-  <meta property="og:description" content="Same-day mold inspection, mold testing, and air quality testing for Vancouver homes and properties.">
-  <meta property="og:locale" content="en_CA">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#1f6b4d">
-  <link rel="icon" type="image/png" href="/assets/logo.png">
-  <link rel="apple-touch-icon" href="/assets/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-  <script type="application/ld+json">
+<?php
+declare(strict_types=1);
+
+$pageTitle = 'Mold Inspection Vancouver | (604) 800-3900';
+$pageDescription = 'Certified mold inspection in Vancouver. Same-day mold testing, moisture detection, air quality testing, thermal imaging, and clear reports. Call 604-800-3900.';
+$pageCanonicalPath = '/';
+$pageOgTitle = 'Mold Inspection Vancouver | Certified Mold Testing';
+$pageOgDescription = 'Same-day mold inspection, mold testing, and air quality testing for Vancouver homes and properties.';
+$activePage = 'home';
+$extraHead = <<<'HTML'
+<script type="application/ld+json">
     {"@context":"https://schema.org","@type":"LocalBusiness","name":"Mold Inspection Vancouver","url":"https://moldinspectionvancouver.ca/","telephone":"+1-604-800-3900","email":"info@moldinspectionvancouver.ca","address":{"@type":"PostalAddress","streetAddress":"Serving Metro Vancouver","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"areaServed":["Vancouver","West Vancouver","North Vancouver","Burnaby","Coquitlam"],"priceRange":"$$","description":"Certified mold inspection, mold testing, air quality testing, thermal imaging, moisture detection, and post-remediation testing in Vancouver and Metro Vancouver.","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"21:00"}]}
   </script>
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top py-3" aria-label="Main navigation">
-      <div class="container">
-        <a class="navbar-brand" href="/"><img class="site-logo" src="/assets/logo.svg" alt="Mold Inspection Vancouver"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/mold-testing-vancouver/">Mold Testing</a></li>
-                <li><a class="dropdown-item" href="/mold-detection-vancouver/">Mold Detection</a></li>
-                <li><a class="dropdown-item" href="/black-mold-inspection-vancouver/">Black Mold Inspection</a></li>
-                <li><a class="dropdown-item" href="/attic-mold-inspection-vancouver/">Attic Mold Inspection</a></li>
-                <li><a class="dropdown-item" href="/crawl-space-mold-inspection-vancouver/">Crawl Space Mold Inspection</a></li>
-                <li><a class="dropdown-item" href="/condo-mold-inspection-vancouver/">Condo Mold Inspection</a></li>
-                <li><a class="dropdown-item" href="/commercial-mold-inspection-vancouver/">Commercial Mold Inspection</a></li>
-                <li><a class="dropdown-item" href="/air-quality-testing-vancouver/">Air Quality Testing</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
-            <li class="nav-item"><a class="btn btn-primary-custom" href="tel:+16048003900"><i class="bi bi-telephone-fill me-2"></i>604-800-3900</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
+HTML;
+$rootDir = __DIR__;
+require $rootDir . '/includes/header.php';
+?>
+<main>
     <section class="hero">
       <div class="container">
         <div class="row align-items-center g-5">
@@ -80,14 +38,13 @@
           <div class="col-lg-5">
             <div class="hero-card">
               <img class="service-photo" src="/asset/image/inspecting-mold.jpg" alt="Mold inspector checking a Vancouver home">
-              <form class="quick-form contact-form" action="/contact-submit/" method="post" aria-label="Quick inspection request form">
-                <h2 class="h4 mb-3">Request a Call Back</h2>
-                <label class="form-label" for="quickName">Name</label>
-                <input class="form-control mb-3" id="quickName" name="name" autocomplete="name" required>
-                <label class="form-label" for="quickPhone">Phone</label>
-                <input class="form-control mb-3" id="quickPhone" name="phone" type="tel" autocomplete="tel" required>
-                <button class="btn btn-primary-custom w-100" type="submit">Send Request</button>
-              </form>
+              <?php
+$formClass = 'quick-form contact-form';
+$formTitle = 'Request a Call Back';
+$formButton = 'Send Request';
+$messagePlaceholder = 'Tell us what you found and where you noticed it.';
+require $rootDir . '/includes/contact-form.php';
+?>
             </div>
           </div>
         </div>
@@ -274,22 +231,5 @@
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5"><img class="footer-logo mb-3" src="/assets/logo.svg" alt="Mold Inspection Vancouver"><p>Certified mold inspection, mold testing, air quality testing, moisture detection, and reporting for Vancouver homes and properties.</p><a class="btn btn-primary-custom mt-2" href="tel:+16048003900">Call 604-800-3900</a></div>
-        <div class="col-6 col-lg-3"><h3 class="h5">Services</h3><a href="/mold-testing-vancouver/">Mold testing</a><br><a href="/mold-detection-vancouver/">Mold detection</a><br><a href="/black-mold-inspection-vancouver/">Black mold inspection</a><br><a href="/air-quality-testing-vancouver/">Air quality testing</a></div>
-        <div class="col-6 col-lg-2"><h3 class="h5">Areas</h3><a href="/">Vancouver</a><br><a href="/">West Vancouver</a><br><a href="/">North Vancouver</a><br><a href="/">Burnaby</a><br><a href="/">Coquitlam</a></div>
-        <div class="col-lg-2"><h3 class="h5">Company</h3><a href="/about/">About</a><br><a href="/contact/">Contact</a><br><a href="/sitemap.xml">Sitemap</a></div>
-      </div>
-      <div class="credential-strip" aria-label="Certifications and Canadian business badges"><div class="credential-card"><img src="/asset/image/IICRCLogo-certificate.avif" alt="IICRC certified logo"><span>IICRC Certified</span></div><div class="credential-card"><img src="/asset/image/VRCALogo-certificate.png" alt="VRCA certificate logo"><span>VRCA Certificate</span></div><div class="credential-card"><span class="canada-flag" aria-hidden="true">🇨🇦</span><span>Proudly Canadian</span></div></div><hr class="border-secondary my-4"><div class="footer-meta"><span>&copy; 2026 Mold Inspection Vancouver. All rights reserved <a href="https://vrrestoration.ca/en" target="_blank" rel="noopener">VR Plus Restoration</a></span><span>Design and develop by <a href="https://webpulse.ca" target="_blank" rel="noopener">webpulse.ca</a></span></div>
-    </div>
-  </footer>
-  <div class="mobile-call-bar"><a class="btn btn-primary-custom" href="tel:+16048003900"><i class="bi bi-telephone-fill me-2"></i>Call 604-800-3900</a></div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>const navbar=document.querySelector(".navbar");function updateNavbar(){navbar.classList.toggle("scrolled",window.scrollY>12)}updateNavbar();window.addEventListener("scroll",updateNavbar,{passive:true});</script>
-  <script src="/recaptcha-config/"></script>
-  <script src="/site.js"></script>
-</body>
-</html>
+<?php
+require $rootDir . '/includes/footer.php';

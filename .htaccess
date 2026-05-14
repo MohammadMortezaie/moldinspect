@@ -1,6 +1,15 @@
 Options -Indexes
 RewriteEngine On
 
+# Force HTTPS and the non-www canonical host.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.moldinspectionvancouver\.ca$ [NC]
+RewriteRule ^ https://moldinspectionvancouver.ca%{REQUEST_URI} [R=301,L]
+
+# Redirect direct index files to their clean folder URLs.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.(html|php)[\s?] [NC]
+RewriteRule ^(.*/)?index\.(html|php)$ /$1 [R=301,L]
+
 # Redirect direct .html requests to clean URLs.
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
 RewriteRule ^ %1 [R=301,L]
@@ -9,17 +18,17 @@ RewriteRule ^ %1 [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
 RewriteRule ^ %1 [R=301,L]
 
-# Serve existing extensionless pages from their .html files.
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+?)/?$ $1.html [L]
-
-# Serve existing extensionless PHP endpoints.
+# Serve existing extensionless PHP pages.
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+?)/?$ $1.php [L]
 
-DirectoryIndex index.html
+# Serve legacy extensionless HTML pages if any remain.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+DirectoryIndex index.php index.html
 
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
