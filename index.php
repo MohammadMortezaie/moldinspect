@@ -19,7 +19,7 @@ require $rootDir . '/includes/header.php';
     <section class="hero">
       <div class="container">
         <div class="row align-items-center g-5">
-          <div class="col-lg-7">
+          <div class="col-lg-8">
             <div class="eyebrow"><i class="bi bi-check-circle-fill"></i> Same-day mold inspection in Vancouver</div>
             <h1>Mold Inspection Vancouver</h1>
             <p class="hero-copy mt-3">Certified mold inspection, mold testing, moisture detection, and clear reporting for Vancouver homeowners who need fast, trustworthy answers.</p>
@@ -35,7 +35,7 @@ require $rootDir . '/includes/header.php';
               <div class="col-6 col-md-3"><div class="trust-item"><i class="bi bi-geo-alt"></i><span>Local Team</span></div></div>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-4">
             <div class="hero-card">
               <img class="service-photo" src="/asset/image/inspecting-mold.jpg" alt="Mold inspector checking a Vancouver home">
               <?php

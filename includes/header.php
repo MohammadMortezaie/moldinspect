@@ -40,6 +40,7 @@ function active_class(string $page, string $activePage): string
   <meta property="og:description" content="<?= e($pageOgDescription) ?>">
   <meta property="og:locale" content="en_CA">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="google-site-verification" content="EcdAsfbwFjUVdRAt2KA6Ihde9LrEjXrjhsRpnHpt8gQ">
   <meta name="theme-color" content="#1f6b4d">
   <link rel="icon" type="image/png" href="/assets/logo.png">
   <link rel="apple-touch-icon" href="/assets/logo.png">
