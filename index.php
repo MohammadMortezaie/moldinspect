@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-$pageTitle = 'Mold Inspection Vancouver | (604) 800-3900';
-$pageDescription = 'Certified mold inspection in Vancouver. Same-day mold testing, moisture detection, air quality testing, thermal imaging, and clear reports. Call 604-800-3900.';
+$pageTitle = 'Mold Inspection Vancouver BC | Certified Mold Testing & Reports';
+$pageDescription = 'Certified mold inspection in Vancouver BC for homes, condos, rentals, and businesses. Moisture checks, mold testing, air quality testing, photos, and clear reports. Call 604-800-3900.';
 $pageCanonicalPath = '/';
-$pageOgTitle = 'Mold Inspection Vancouver | Certified Mold Testing';
-$pageOgDescription = 'Same-day mold inspection, mold testing, and air quality testing for Vancouver homes and properties.';
+$pageOgTitle = 'Mold Inspection Vancouver BC | Certified Mold Testing';
+$pageOgDescription = 'Mold inspection, mold testing, moisture detection, and air quality testing for Vancouver homes, condos, rentals, and businesses.';
 $activePage = 'home';
 $extraHead = <<<'HTML'
 <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Mold Inspection Vancouver","url":"https://moldinspectionvancouver.ca/","telephone":"+1-604-800-3900","email":"info@moldinspectionvancouver.ca","address":{"@type":"PostalAddress","streetAddress":"Serving Metro Vancouver","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"areaServed":["Vancouver","West Vancouver","North Vancouver","Burnaby","Coquitlam"],"priceRange":"$$","description":"Certified mold inspection, mold testing, air quality testing, thermal imaging, moisture detection, and post-remediation testing in Vancouver and Metro Vancouver.","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"21:00"}]}
+    {"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://moldinspectionvancouver.ca/#business","name":"Mold Inspection Vancouver","url":"https://moldinspectionvancouver.ca/","telephone":"+1-604-800-3900","email":"info@moldinspectionvancouver.ca","image":"https://moldinspectionvancouver.ca/assets/logo.png","logo":"https://moldinspectionvancouver.ca/assets/logo.png","address":{"@type":"PostalAddress","streetAddress":"Serving Metro Vancouver","addressLocality":"Vancouver","addressRegion":"BC","addressCountry":"CA"},"areaServed":[{"@type":"City","name":"Vancouver"},{"@type":"City","name":"West Vancouver"},{"@type":"City","name":"North Vancouver"},{"@type":"City","name":"Burnaby"},{"@type":"City","name":"Coquitlam"},{"@type":"AdministrativeArea","name":"Metro Vancouver"}],"priceRange":"$$","description":"Certified mold inspection, mold testing, air quality testing, thermal imaging, moisture detection, and post-remediation testing in Vancouver and Metro Vancouver.","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"21:00"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Mold inspection services in Vancouver","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mold Inspection Vancouver","areaServed":"Vancouver, BC","serviceType":"Mold inspection"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Mold Testing Vancouver","areaServed":"Vancouver, BC","serviceType":"Mold testing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Air Quality Testing Vancouver","areaServed":"Vancouver, BC","serviceType":"Indoor air quality testing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Black Mold Inspection Vancouver","areaServed":"Vancouver, BC","serviceType":"Black mold inspection"}}]}},{"@type":"WebSite","@id":"https://moldinspectionvancouver.ca/#website","url":"https://moldinspectionvancouver.ca/","name":"Mold Inspection Vancouver","publisher":{"@id":"https://moldinspectionvancouver.ca/#business"}},{"@type":"FAQPage","@id":"https://moldinspectionvancouver.ca/#faq","mainEntity":[{"@type":"Question","name":"What does a mold inspection include in Vancouver?","acceptedAnswer":{"@type":"Answer","text":"A mold inspection checks visible growth, musty odours, moisture conditions, leak history, condensation patterns, attics, crawl spaces, bathrooms, kitchens, exterior walls, and other risk areas. Testing can be added when documentation or lab confirmation is useful."}},{"@type":"Question","name":"Do I need mold testing or just an inspection?","acceptedAnswer":{"@type":"Answer","text":"Many homes start with inspection because mold is usually caused by moisture. Air or surface testing is useful when mold is hidden, a report is needed for a buyer, tenant, strata, or property manager, or post-remediation clearance is required."}},{"@type":"Question","name":"How quickly should I book after water damage?","acceptedAnswer":{"@type":"Answer","text":"Book quickly after leaks, floods, roof issues, or plumbing failures. Damp porous materials can support mold growth when moisture is not corrected, and early inspection helps define drying, repair, testing, and remediation needs."}},{"@type":"Question","name":"Do you inspect condos, rentals, and strata properties?","acceptedAnswer":{"@type":"Answer","text":"Yes. Mold inspections are available for Vancouver houses, condos, apartments, rentals, strata units, commercial spaces, and managed properties with documentation that can be shared with owners, tenants, strata councils, or property managers."}}]}]}
   </script>
 HTML;
 $rootDir = __DIR__;
@@ -21,8 +21,8 @@ require $rootDir . '/includes/header.php';
         <div class="row align-items-center g-5">
           <div class="col-lg-8">
             <div class="eyebrow"><i class="bi bi-check-circle-fill"></i> Same-day mold inspection in Vancouver</div>
-            <h1>Mold Inspection Vancouver</h1>
-            <p class="hero-copy mt-3">Certified mold inspection, mold testing, moisture detection, and clear reporting for Vancouver homeowners who need fast, trustworthy answers.</p>
+            <h1>Mold Inspection Vancouver BC</h1>
+            <p class="hero-copy mt-3">Certified mold inspection, mold testing, moisture detection, air quality testing, photos, and clear reporting for Vancouver homes, condos, rentals, and businesses.</p>
             <a class="hero-phone my-3" href="tel:+16048003900"><i class="bi bi-telephone-fill fs-2"></i>604-800-3900</a>
             <div class="d-grid d-sm-flex gap-3">
               <a class="btn btn-primary-custom" href="#hero-card"><i class="bi bi-calendar2-check me-2"></i>Book Inspection</a>
@@ -84,6 +84,31 @@ require $rootDir . '/includes/contact-form.php';
 
     <section class="section-padding soft-section">
       <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <p class="section-kicker">Mold inspection Vancouver</p>
+            <h2 class="section-title">A complete mold inspection finds the source, not just the stain.</h2>
+            <p class="section-text">People search for mold inspection in Vancouver when they need a straight answer: is it mold, why is it there, how far has moisture travelled, and what should happen before cleanup or repairs begin?</p>
+            <p class="section-text">Our inspection looks at visible growth, moisture readings, leak history, attic and crawl space conditions, window condensation, bathrooms, kitchens, exterior walls, odours, and materials that may need testing or remediation.</p>
+            <div class="d-grid d-sm-flex gap-3 mt-4">
+              <a class="btn btn-primary-custom" href="/contact/">Book Mold Inspection</a>
+              <a class="btn btn-outline-custom" href="/mold-testing-vancouver/">See Testing Options</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-sm-6"><article class="service-card"><span class="icon-pill"><i class="bi bi-moisture"></i></span><h3>Moisture source</h3><p>Leaks, condensation, humidity, and damp materials are checked first because mold returns when the source is missed.</p></article></div>
+              <div class="col-sm-6"><article class="service-card"><span class="icon-pill"><i class="bi bi-camera"></i></span><h3>Photo report</h3><p>Photos and plain-language findings help homeowners, buyers, tenants, strata, and managers understand the issue.</p></article></div>
+              <div class="col-sm-6"><article class="service-card"><span class="icon-pill"><i class="bi bi-droplet-half"></i></span><h3>Testing options</h3><p>Air and surface samples are available when lab documentation or post-remediation clearance is needed.</p></article></div>
+              <div class="col-sm-6"><article class="service-card"><span class="icon-pill"><i class="bi bi-tools"></i></span><h3>Next steps</h3><p>You get practical guidance for drying, repair, containment, cleanup, remediation, or monitoring.</p></article></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding soft-section">
+      <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-lg-6">
             <p class="section-kicker">When to call</p>
@@ -101,6 +126,28 @@ require $rootDir . '/includes/contact-form.php';
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row align-items-end mb-4 g-4">
+          <div class="col-lg-7">
+            <p class="section-kicker">Local Vancouver inspection needs</p>
+            <h2 class="section-title">Common mold inspection calls across Vancouver.</h2>
+          </div>
+          <div class="col-lg-5">
+            <p class="section-text mb-0">Wet winters, older homes, strata buildings, below-grade suites, and sealed interiors create repeat mold patterns in Vancouver properties.</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><article class="plain-card"><h3>Basement suites</h3><p>Musty lower-level odours, damp closets, perimeter wall staining, and poor ventilation often need moisture investigation.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="plain-card"><h3>Condos and strata</h3><p>Window condensation, shared plumbing, bathroom exhaust, and neighbouring leaks require clear documentation.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="plain-card"><h3>Post-leak checks</h3><p>After roof, pipe, dishwasher, toilet, or washing machine leaks, inspection helps decide whether testing or remediation is needed.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="plain-card"><h3>Real estate concerns</h3><p>Buyers, sellers, and agents use mold inspection reports to clarify visible growth, odours, and possible hidden damage.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="plain-card"><h3>Attics and roof sheathing</h3><p>Bathroom fan discharge, blocked soffits, air leakage, and roof leaks can create attic mold above finished rooms.</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="plain-card"><h3>Commercial spaces</h3><p>Offices, clinics, retail units, and managed properties need timely documentation when occupants report odours or water damage.</p></article></div>
         </div>
       </div>
     </section>
@@ -200,6 +247,32 @@ require $rootDir . '/includes/contact-form.php';
 
     <section class="section-padding">
       <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-kicker">Service areas</p>
+            <h2 class="section-title">Mold inspection in Vancouver and nearby cities.</h2>
+            <p class="section-text">We serve Vancouver and Metro Vancouver properties, including houses, condos, apartments, rental units, strata buildings, offices, and retail spaces.</p>
+            <a class="big-call" href="tel:+16048003900">604-800-3900</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-6 col-md-4"><div class="area-card">Vancouver</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">Downtown</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">Kitsilano</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">Mount Pleasant</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">Kerrisdale</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">East Vancouver</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">North Vancouver</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">West Vancouver</div></div>
+              <div class="col-6 col-md-4"><div class="area-card">Burnaby</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 order-lg-2">
             <p class="section-kicker">Protect your home</p>
@@ -226,6 +299,25 @@ require $rootDir . '/includes/contact-form.php';
           <div class="row align-items-center g-4">
             <div class="col-lg-7"><p class="section-kicker text-white-50">Need help today?</p><h2 class="section-title text-white mb-2">Mold problem? Call now.</h2><p class="mb-0">Speak with a local Vancouver mold inspection team and get clear next steps.</p></div>
             <div class="col-lg-5 text-lg-end"><a class="big-call" href="tel:+16048003900">604-800-3900</a><div class="mt-3"><a class="btn btn-light" href="/contact/"><i class="bi bi-send me-2"></i>Book Online</a></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding pt-0">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="section-kicker">Mold inspection FAQ</p>
+            <h2 class="section-title">Questions Vancouver customers ask before booking.</h2>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <div class="col-12"><article class="plain-card"><h3>What does a mold inspection include in Vancouver?</h3><p>A mold inspection checks visible growth, musty odours, moisture conditions, leak history, condensation patterns, attics, crawl spaces, bathrooms, kitchens, exterior walls, and other risk areas. Testing can be added when documentation or lab confirmation is useful.</p></article></div>
+              <div class="col-12"><article class="plain-card"><h3>Do I need mold testing or just an inspection?</h3><p>Many homes start with inspection because mold is usually caused by moisture. Air or surface testing is useful when mold is hidden, a report is needed for a buyer, tenant, strata, or property manager, or post-remediation clearance is required.</p></article></div>
+              <div class="col-12"><article class="plain-card"><h3>How quickly should I book after water damage?</h3><p>Book quickly after leaks, floods, roof issues, or plumbing failures. Damp porous materials can support mold growth when moisture is not corrected, and early inspection helps define drying, repair, testing, and remediation needs.</p></article></div>
+              <div class="col-12"><article class="plain-card"><h3>Do you inspect condos, rentals, and strata properties?</h3><p>Yes. Mold inspections are available for Vancouver houses, condos, apartments, rentals, strata units, commercial spaces, and managed properties with documentation that can be shared with owners, tenants, strata councils, or property managers.</p></article></div>
+            </div>
           </div>
         </div>
       </div>
