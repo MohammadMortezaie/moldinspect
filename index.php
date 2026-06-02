@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-$pageTitle = 'Mold Inspection Vancouver BC | Certified Mold Testing & Reports';
+$pageTitle = '24/7 Mold Inspection Vancouver BC | Certified Mold Testing';
 $pageDescription = 'Certified mold inspection in Vancouver BC for homes, condos, rentals, and businesses. Moisture checks, mold testing, air quality testing, photos, and clear reports. Call 604-800-3900.';
 $pageCanonicalPath = '/';
 $pageOgTitle = 'Mold Inspection Vancouver BC | Certified Mold Testing';
